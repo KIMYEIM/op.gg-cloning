@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>챔피언 분석 - Leage of Legends</title>
+    <link rel="shortcut icon" href="_assets/favicon.ico" />
+    <link rel="stylesheet" href="styles/css/main.css" />
+  </head>
+  <body>
+    <!-- Header section -->
+    <header class="header">
+      <!-- Game Nav -->
+      <nav class="header__game game">
+        <img class="game__logo" src="_assets/Game/opgg_logo.svg">
+        <div class="game__menu">
+          <ul>
+            <li class="game__item--selected">
+              <img class="game__icon" src="_assets/Game/lol_logo.svg">
+              <div class="game__name">리그오브레전드</div>
+            </li>
+            <li class="game__item">
+              <img class="game__icon" src="_assets/Game/bs_logo.svg">
+              <div class="game__name">이터널 리턴</div>
+            </li>
+            <li class="game__item">
+              <img class="game__icon" src="_assets/Game/pubg_logo.svg">
+              <div class="game__name">배틀그라운드</div>
+            </li>
+            <li class="game__item">
+              <img class="game__icon" src="_assets/Game/overwatch_logo.svg">
+              <div class="game__name">오버워치</div>
+            </li>
+            <li class="game__item">
+              <img class="game__icon" src="_assets/Game/talk_logo.svg">
+              <div class="game__name">톡피지지</div>
+            </li>
+            <li class="game__item">
+              <img class="game__icon" src="_assets/Game/app_logo.svg">
+              <div class="game__name">데스크톱</div>
+            </li>
+            <li class="game__item">
+              <img class="game__icon" src="_assets/Game/aggro.gif">
+              <div class="game__name">aggro</div>
+            </li>
+          </ul>
+        </div>
+        <div class="game__global">
+          <img class="game__globe" src="_assets/Game/language.png">
+          <div class="game__lang">한국어 ▾</div>
+        </div>
+        <button class="game__login">로그인</button>
+      </nav>
+      <!-- Menu Nav -->
+      <nav class="header__menu menu">
+        <div class="menu__list">
+          <ul>
+            <li class="menu__item">#집에있자</li>
+            <li class="menu__item--selected">챔피언 분석</li>
+            <li class="menu__item--mint">칼바람</li>
+            <li class="menu__item--mint">우르프</li>
+            <li class="menu__item">통계</li>
+            <li class="menu__item">랭킹</li>
+            <li class="menu__item">프로관전</li>
+            <li class="menu__item">멀티서치</li>
+            <li class="menu__item">OP셜</li>
+            <li class="menu__item">커뮤니티</li>
+          </ul>
+        </div>
+        <div class="menu__search search">
+          <div class="search__dropdown">KR ▾</div>
+          <input class="search__input" placeholder="소환사명, 소환사명, ..."></div>
+          <img class="search__btn" src="_assets/Menu/search_logo.svg">
+        </div>
+      </nav>
+      <div class="header__ad">OP.GG for Desktop 공식 런칭! 이제 게임에만 집중하세요. 나머진 저희가 준비 하겠습니다.</div>
+    </header>
+    <!-- Ad section -->
+    <section class="ad">
+      <img src="_assets/bigAd.jpg">
+    </section>
+    <!-- Bottom section -->
+    <section class="bottom">
+      <div class="bottom__info info">
+        <div class="info__data">챔피언 분석은 플래티넘 티어 이상의 랭크 게임만을 수집합니다</div>
+        <div class="info__version">
+          <img class="info__question" src="_assets/icon-tip.png">
+          <h5>Korea - 버전 : 11.19</h5>
+        </div>
+      </div>
+      <!-- Bottom grid -->
+      <div class="bottom__grid">
+        <!-- Champion section -->
+        <div class="bottom__champion champion">
+          <div class="champion__header">
+            <div class="champion__pos">
+              <ul>
+                <li class="champion__list--selected">전체</li>
+                <li class="champion__list">탑</li>
+                <li class="champion__list">정글</li>
+                <li class="champion__list">미드</li>
+                <li class="champion__list">바텀</li>
+                <li class="champion__list">서포터</li>
+                <li class="champion__list--blue">로테이션</li>
+              </ul>
+            </div>
+            <input class="champion__search" placeholder="챔피언 검색 (가렌, ㄱㄹ, ..)"></input>
+          </div>
+          <!-- Champion grid -->
+          <div class="champion__grid">
+            <div class="champion__container">
+              <img src="_assets/Champion/82/tile000.png">
+              <h5>아트록스</h5>
+            </div>
+            <div class="champion__container">
+              <img src="_assets/Champion/82/tile001.png">
+              <h5>아리</h5>
+            </div>
+            <div class="champion__container">
+              <img src="_assets/Champion/82/tile002.png">
+              <h5>아칼리</h5>
+            </div>
+            <div class="champion__container">
+              <img src="_assets/Champion/82/tile003.png">
+              <h5>아크샨</h5>
+            </div>
+            <div class="champion__container">
+              <img src="_assets/Champion/82/tile004.png">
+              <h5>알리스타</h5>
+            </div>
+            <div class="champion__container">
+              <img src="_assets/Champion/82/tile005.png">
+              <h5>아무무</h5>
+            </div>
+            <div class="champion__container">
+              <img src="_assets/Champion/82/tile006.png">
+              <h5>애니비아</h5>
+            </div>
+            <div class="champion__container">
+              <img src="_assets/Champion/82/tile007.png">
+              <h5>애니</h5>
+            </div>
+            <div class="champion__container">
+              <img src="_assets/Champion/82/tile008.png">
+              <h5>아펠리오스</h5>
+            </div>
+            <div class="champion__container--selected">
+              <img src="_assets/Champion/82/tile009.png">
+              <h5>애쉬</h5>
+            </div>
+            <div class="champion__container--selected">
+              <img src="_assets/Champion/82/tile019.png">
+              <h5>초가스</h5>
+            </div>
+            <div class="champion__container">
+              <img src="_assets/Champion/82/tile000.png">
+              <h5>아트록스</h5>
+            </div>
+            <div class="champion__container">
+              <img src="_assets/Champion/82/tile001.png">
+              <h5>아리</h5>
+            </div>
+            <div class="champion__container">
+              <img src="_assets/Champion/82/tile002.png">
+              <h5>아칼리</h5>
+            </div>
+            <div class="champion__container">
+              <img src="_assets/Champion/82/tile003.png">
+              <h5>아크샨</h5>
+            </div>
+            <div class="champion__container">
+              <img src="_assets/Champion/82/tile004.png">
+              <h5>알리스타</h5>
+            </div>
+            <div class="champion__container">
+              <img src="_assets/Champion/82/tile005.png">
+              <h5>아무무</h5>
+            </div>
+            <div class="champion__container">
+              <img src="_assets/Champion/82/tile006.png">
+              <h5>애니비아</h5>
+            </div>
+            <div class="champion__container">
+              <img src="_assets/Champion/82/tile007.png">
+              <h5>애니</h5>
+            </div>
+            <div class="champion__container">
+              <img src="_assets/Champion/82/tile008.png">
+              <h5>아펠리오스</h5>
+            </div>
+            <div class="champion__container--selected">
+              <img src="_assets/Champion/82/tile009.png">
+              <h5>애쉬</h5>
+            </div>
+            <div class="champion__container--selected">
+              <img src="_assets/Champion/82/tile019.png">
+              <h5>초가스</h5>
+            </div>
+            <div class="champion__container">
+              <img src="_assets/Champion/82/tile000.png">
+              <h5>아트록스</h5>
+            </div>
+            <div class="champion__container">
+              <img src="_assets/Champion/82/tile001.png">
+              <h5>아리</h5>
+            </div>
+            <div class="champion__container">
+              <img src="_assets/Champion/82/tile002.png">
+              <h5>아칼리</h5>
+            </div>
+            <div class="champion__container">
+              <img src="_assets/Champion/82/tile003.png">
+              <h5>아크샨</h5>
+            </div>
+            <div class="champion__container">
+              <img src="_assets/Champion/82/tile004.png">
+              <h5>알리스타</h5>
+            </div>
+            <div class="champion__container">
+              <img src="_assets/Champion/82/tile005.png">
+              <h5>아무무</h5>
+            </div>
+            <div class="champion__container">
+              <img src="_assets/Champion/82/tile006.png">
+              <h5>애니비아</h5>
+            </div>
+            <div class="champion__container">
+              <img src="_assets/Champion/82/tile007.png">
+              <h5>애니</h5>
+            </div>
+            <div class="champion__container">
+              <img src="_assets/Champion/82/tile008.png">
+              <h5>아펠리오스</h5>
+            </div>
+            <div class="champion__container--selected">
+              <img src="_assets/Champion/82/tile009.png">
+              <h5>애쉬</h5>
+            </div>
+            <div class="champion__container--selected">
+              <img src="_assets/Champion/82/tile019.png">
+              <h5>초가스</h5>
+            </div>
+            <div class="champion__container">
+              <img src="_assets/Champion/82/tile000.png">
+              <h5>아트록스</h5>
+            </div>
+            <div class="champion__container">
+              <img src="_assets/Champion/82/tile001.png">
+              <h5>아리</h5>
+            </div>
+            <div class="champion__container">
+              <img src="_assets/Champion/82/tile002.png">
+              <h5>아칼리</h5>
+            </div>
+            <div class="champion__container">
+              <img src="_assets/Champion/82/tile003.png">
+              <h5>아크샨</h5>
+            </div>
+            <div class="champion__container">
+              <img src="_assets/Champion/82/tile004.png">
+              <h5>알리스타</h5>
+            </div>
+            <div class="champion__container">
+              <img src="_assets/Champion/82/tile005.png">
+              <h5>아무무</h5>
+            </div>
+            <div class="champion__container">
+              <img src="_assets/Champion/82/tile006.png">
+              <h5>애니비아</h5>
+            </div>
+            <div class="champion__container">
+              <img src="_assets/Champion/82/tile007.png">
+              <h5>애니</h5>
+            </div>
+            <div class="champion__container">
+              <img src="_assets/Champion/82/tile008.png">
+              <h5>아펠리오스</h5>
+            </div>
+            <div class="champion__container--selected">
+              <img src="_assets/Champion/82/tile009.png">
+              <h5>애쉬</h5>
+            </div>
+            <div class="champion__container--selected">
+              <img src="_assets/Champion/82/tile019.png">
+              <h5>초가스</h5>
+            </div>
+            <div class="champion__container">
+              <img src="_assets/Champion/82/tile000.png">
+              <h5>아트록스</h5>
+            </div>
+            <div class="champion__container">
+              <img src="_assets/Champion/82/tile001.png">
+              <h5>아리</h5>
+            </div>
+            <div class="champion__container">
+              <img src="_assets/Champion/82/tile002.png">
+              <h5>아칼리</h5>
+            </div>
+            <div class="champion__container">
+              <img src="_assets/Champion/82/tile003.png">
+              <h5>아크샨</h5>
+            </div>
+            <div class="champion__container">
+              <img src="_assets/Champion/82/tile004.png">
+              <h5>알리스타</h5>
+            </div>
+            <div class="champion__container">
+              <img src="_assets/Champion/82/tile005.png">
+              <h5>아무무</h5>
+            </div>
+            <div class="champion__container">
+              <img src="_assets/Champion/82/tile006.png">
+              <h5>애니비아</h5>
+            </div>
+            <div class="champion__container">
+              <img src="_assets/Champion/82/tile007.png">
+              <h5>애니</h5>
+            </div>
+            <div class="champion__container">
+              <img src="_assets/Champion/82/tile008.png">
+              <h5>아펠리오스</h5>
+            </div>
+            <div class="champion__container--selected">
+              <img src="_assets/Champion/82/tile009.png">
+              <h5>애쉬</h5>
+            </div>
+            <div class="champion__container--selected">
+              <img src="_assets/Champion/82/tile019.png">
+              <h5>초가스</h5>
+            </div>
+            <div class="champion__container">
+              <img src="_assets/Champion/82/tile000.png">
+              <h5>아트록스</h5>
+            </div>
+            <div class="champion__container">
+              <img src="_assets/Champion/82/tile001.png">
+              <h5>아리</h5>
+            </div>
+            <div class="champion__container">
+              <img src="_assets/Champion/82/tile002.png">
+              <h5>아칼리</h5>
+            </div>
+            <div class="champion__container">
+              <img src="_assets/Champion/82/tile003.png">
+              <h5>아크샨</h5>
+            </div>
+            <div class="champion__container">
+              <img src="_assets/Champion/82/tile004.png">
+              <h5>알리스타</h5>
+            </div>
+            <div class="champion__container">
+              <img src="_assets/Champion/82/tile005.png">
+              <h5>아무무</h5>
+            </div>
+            <div class="champion__container">
+              <img src="_assets/Champion/82/tile006.png">
+              <h5>애니비아</h5>
+            </div>
+            <div class="champion__container">
+              <img src="_assets/Champion/82/tile007.png">
+              <h5>애니</h5>
+            </div>
+            <div class="champion__container">
+              <img src="_assets/Champion/82/tile008.png">
+              <h5>아펠리오스</h5>
+            </div>
+            <div class="champion__container--selected">
+              <img src="_assets/Champion/82/tile009.png">
+              <h5>애쉬</h5>
+            </div>
+            <div class="champion__container--selected">
+              <img src="_assets/Champion/82/tile019.png">
+              <h5>초가스</h5>
+            </div>
+          </div>
+        </div>
+        <!-- Rank section -->
+        <div class="bottom__rank rank">
+          <div class="rank__header">
+            <div class="rank__chamRank">챔피언 순위</div>
+            <div class="rank__menuList">
+              <ul>
+                <li class="rank__menu">
+                  <img src="_assets/Rank/tier.png">
+                  티어
+                </li>
+                <li class="rank__menu">|</li>
+                <li class="rank__menu">승률</li>
+                <li class="rank__menu">|</li>
+                <li class="rank__menu">픽률</li>
+                <li class="rank__menu">|</li>
+                <li class="rank__menu">밴률</li>
+              </ul>
+            </div>
+          </div>
+          <div class="rank__main">
+            <div class="rank__posList">
+              <ul>
+                <li class="rank__pos--selected">탑</li>
+                <li class="rank__pos">정글</li>
+                <li class="rank__pos">미드</li>
+                <li class="rank__pos">바텀</li>
+                <li class="rank__pos">서포터</li>
+              </ul>
+            </div>
+            <div class="rank__gridHeader">
+              <ul>
+                <li class="rank__headerItem">#</li>
+                <li class="rank__headerItem">챔피언</li>
+                <li class="rank__headerItem">승률</li>
+                <li class="rank__headerItem">픽률</li>
+                <li class="rank__headerItem">티어</li>
+                <li class="rank__headerItem">
+                  <img src="_assets/icon-tip.png">
+                </li>
+              </ul>
+            </div>
+            <!--Rank grid-->
+            <div class="rank__grid">
+              <div class="rank__container">
+                <div class="rank__num">1</div>
+                <div class="rank__diff">
+                  <img class="rank__diffIcon" src="_assets/Rank/same.png" alt="">
+                  <div class="rank__diffNum">0</div>
+                </div>
+                <img class="rank__thumb" src="_assets/Rank/32/tile017.png" alt="">
+                <div class="rank__cham">
+                  <div class="rank__name">카밀</div>
+                  <div class="rank__chamPos">탑</div>
+                </div>
+                <div class="rank__win">51.36%</div>
+                <div class="rank__pick">10.96%</div>
+                <img class="rank__tier" src="_assets/Rank/1.png" alt="">
+              </div>
+              <div class="rank__container">
+                <div class="rank__num">1</div>
+                <div class="rank__diff">
+                  <img class="rank__diffIcon" src="_assets/Rank/same.png" alt="">
+                  <div class="rank__diffNum">0</div>
+                </div>
+                <img class="rank__thumb" src="_assets/Rank/32/tile017.png" alt="">
+                <div class="rank__cham">
+                  <div class="rank__name">카밀</div>
+                  <div class="rank__chamPos">탑</div>
+                </div>
+                <div class="rank__win">51.36%</div>
+                <div class="rank__pick">10.96%</div>
+                <img class="rank__tier" src="_assets/Rank/1.png" alt="">
+              </div>
+              <div class="rank__container">
+                <div class="rank__num">1</div>
+                <div class="rank__diff">
+                  <img class="rank__diffIcon" src="_assets/Rank/same.png" alt="">
+                  <div class="rank__diffNum">0</div>
+                </div>
+                <img class="rank__thumb" src="_assets/Rank/32/tile017.png" alt="">
+                <div class="rank__cham">
+                  <div class="rank__name">카밀</div>
+                  <div class="rank__chamPos">탑</div>
+                </div>
+                <div class="rank__win">51.36%</div>
+                <div class="rank__pick">10.96%</div>
+                <img class="rank__tier" src="_assets/Rank/1.png" alt="">
+              </div>
+              <div class="rank__container">
+                <div class="rank__num">1</div>
+                <div class="rank__diff">
+                  <img class="rank__diffIcon" src="_assets/Rank/same.png" alt="">
+                  <div class="rank__diffNum">0</div>
+                </div>
+                <img class="rank__thumb" src="_assets/Rank/32/tile017.png" alt="">
+                <div class="rank__cham">
+                  <div class="rank__name">카밀</div>
+                  <div class="rank__chamPos">탑</div>
+                </div>
+                <div class="rank__win">51.36%</div>
+                <div class="rank__pick">10.96%</div>
+                <img class="rank__tier" src="_assets/Rank/1.png" alt="">
+              </div>
+              <div class="rank__container">
+                <div class="rank__num">1</div>
+                <div class="rank__diff">
+                  <img class="rank__diffIcon" src="_assets/Rank/same.png" alt="">
+                  <div class="rank__diffNum">0</div>
+                </div>
+                <img class="rank__thumb" src="_assets/Rank/32/tile017.png" alt="">
+                <div class="rank__cham">
+                  <div class="rank__name">카밀</div>
+                  <div class="rank__chamPos">탑</div>
+                </div>
+                <div class="rank__win">51.36%</div>
+                <div class="rank__pick">10.96%</div>
+                <img class="rank__tier" src="_assets/Rank/1.png" alt="">
+              </div>
+              <div class="rank__container">
+                <div class="rank__num">1</div>
+                <div class="rank__diff">
+                  <img class="rank__diffIcon" src="_assets/Rank/same.png" alt="">
+                  <div class="rank__diffNum">0</div>
+                </div>
+                <img class="rank__thumb" src="_assets/Rank/32/tile017.png" alt="">
+                <div class="rank__cham">
+                  <div class="rank__name">카밀</div>
+                  <div class="rank__chamPos">탑</div>
+                </div>
+                <div class="rank__win">51.36%</div>
+                <div class="rank__pick">10.96%</div>
+                <img class="rank__tier" src="_assets/Rank/1.png" alt="">
+              </div>
+              <div class="rank__container">
+                <div class="rank__num">1</div>
+                <div class="rank__diff">
+                  <img class="rank__diffIcon" src="_assets/Rank/same.png" alt="">
+                  <div class="rank__diffNum">0</div>
+                </div>
+                <img class="rank__thumb" src="_assets/Rank/32/tile017.png" alt="">
+                <div class="rank__cham">
+                  <div class="rank__name">카밀</div>
+                  <div class="rank__chamPos">탑</div>
+                </div>
+                <div class="rank__win">51.36%</div>
+                <div class="rank__pick">10.96%</div>
+                <img class="rank__tier" src="_assets/Rank/1.png" alt="">
+              </div>
+              <div class="rank__container">
+                <div class="rank__num">1</div>
+                <div class="rank__diff">
+                  <img class="rank__diffIcon" src="_assets/Rank/same.png" alt="">
+                  <div class="rank__diffNum">0</div>
+                </div>
+                <img class="rank__thumb" src="_assets/Rank/32/tile017.png" alt="">
+                <div class="rank__cham">
+                  <div class="rank__name">카밀</div>
+                  <div class="rank__chamPos">탑</div>
+                </div>
+                <div class="rank__win">51.36%</div>
+                <div class="rank__pick">10.96%</div>
+                <img class="rank__tier" src="_assets/Rank/1.png" alt="">
+              </div>
+              <div class="rank__container">
+                <div class="rank__num">1</div>
+                <div class="rank__diff">
+                  <img class="rank__diffIcon" src="_assets/Rank/same.png" alt="">
+                  <div class="rank__diffNum">0</div>
+                </div>
+                <img class="rank__thumb" src="_assets/Rank/32/tile017.png" alt="">
+                <div class="rank__cham">
+                  <div class="rank__name">카밀</div>
+                  <div class="rank__chamPos">탑</div>
+                </div>
+                <div class="rank__win">51.36%</div>
+                <div class="rank__pick">10.96%</div>
+                <img class="rank__tier" src="_assets/Rank/1.png" alt="">
+              </div>
+              <div class="rank__container">
+                <div class="rank__num">1</div>
+                <div class="rank__diff">
+                  <img class="rank__diffIcon" src="_assets/Rank/same.png" alt="">
+                  <div class="rank__diffNum">0</div>
+                </div>
+                <img class="rank__thumb" src="_assets/Rank/32/tile017.png" alt="">
+                <div class="rank__cham">
+                  <div class="rank__name">카밀</div>
+                  <div class="rank__chamPos">탑</div>
+                </div>
+                <div class="rank__win">51.36%</div>
+                <div class="rank__pick">10.96%</div>
+                <img class="rank__tier" src="_assets/Rank/1.png" alt="">
+              </div>
+              <div class="rank__container">
+                <div class="rank__num">1</div>
+                <div class="rank__diff">
+                  <img class="rank__diffIcon" src="_assets/Rank/same.png" alt="">
+                  <div class="rank__diffNum">0</div>
+                </div>
+                <img class="rank__thumb" src="_assets/Rank/32/tile017.png" alt="">
+                <div class="rank__cham">
+                  <div class="rank__name">카밀</div>
+                  <div class="rank__chamPos">탑</div>
+                </div>
+                <div class="rank__win">51.36%</div>
+                <div class="rank__pick">10.96%</div>
+                <img class="rank__tier" src="_assets/Rank/1.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer section-->
+    <footer class="footer">
+      <div class="footer__list">
+        <ul>
+          <li class="footer__item">About OP.GG</li>
+          <li class="footer__item">로고 히스토리</li>
+          <li class="footer__item">개인정보처리방침</li>
+          <li class="footer__item">도움말</li>
+          <li class="footer__item">제휴</li>
+          <li class="footer__item">광고</li>
+          <li class="footer__item">문의/피드백</li>
+          <li class="footer__item">채용</li>
+        </ul>
+      </div>
+      <div class="footer__copy">
+        © 2012-2021 OP.GG. OP.GG isn’t endorsed by Riot Games and doesn’t reflect the views or opinions of Riot Games or anyone officially involved in producing or managing League of Legends. League of Legends and Riot Games are trademarks or registered trademarks of Riot Games, Inc. League of Legends © Riot Games, Inc.
+      </div>
+    </footer>
+  </body>
+</html>

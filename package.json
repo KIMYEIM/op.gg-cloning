@@ -1,0 +1,14 @@
+{
+  "name": "op.gg-clooning",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/KIMYEIM/op.gg-cloning.git",
+  "author": "KIMYEIM <kyaeim@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "7.32.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-prettier": "4.0.0",
+    "prettier": "2.4.1"
+  }
+}
